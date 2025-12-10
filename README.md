@@ -1,5 +1,5 @@
 # 💫 About Me:
-👶🏻 Beginner Programmer<br>💻 Interested in AI<br>🔭 I’m currently working on EncryptIA<br>📖 I'm currently learning about AI
+🚀 AI Developer & Data Science Enthusiast<br>💻 Interested in AI<br>🔭 I’m currently working on EncryptIA<br>📖 I'm currently learning about AI
 
 
 ## 🌐 Socials:
