@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfaraiders 2 · Calculadora de pedidos</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:#f6efe3; color:#3d2b1f; min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:20px 16px 40px; }
+  .card { background:#fff; border-radius:20px; box-shadow:0 4px 20px rgba(61,43,31,.12); width:100%; max-width:430px; padding:24px; }
+  h1 { font-size:24px; text-align:center; color:#5a3825; }
+  .sub { text-align:center; color:#8a6a50; font-size:14px; margin:6px 0 18px; }
+  .flavor { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; border-bottom:1px solid #efe3d2; }
+  .flavor:last-of-type { border-bottom:none; }
+  .flavor .name { font-weight:700; font-size:16px; }
+  .flavor .desc { font-size:12px; color:#8a6a50; }
+  .stepper { display:flex; align-items:center; gap:10px; }
+  .btn { width:42px; height:42px; border-radius:12px; border:none; font-size:22px; font-weight:700; cursor:pointer; background:#efe3d2; color:#5a3825; user-select:none; }
+  .btn:active { transform:scale(.92); }
+  .btn.minus:disabled { opacity:.3; }
+  .qty { font-size:20px; font-weight:800; min-width:34px; text-align:center; }
+  .total-box { margin-top:18px; background:#5a3825; border-radius:16px; padding:18px; color:#fff; text-align:center; }
+  .total-box .label { font-size:13px; opacity:.8; }
+  .total { font-size:34px; font-weight:900; margin:4px 0 2px; }
+  .breakdown { font-size:13px; opacity:.9; }
+  .note { text-align:center; font-size:12px; color:#8a6a50; margin-top:12px; }
+  .copy { margin-top:14px; width:100%; padding:14px; border:none; border-radius:14px; background:#c8863b; color:#fff; font-size:16px; font-weight:700; cursor:pointer; }
+  .copy:active { transform:scale(.98); }
+  .toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(80px); background:#3d2b1f; color:#fff; padding:12px 20px; border-radius:30px; font-size:14px; transition:.3s; opacity:0; z-index:9; }
+  .toast.show { transform:translateX(-50%) translateY(0); opacity:1; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🍫 Alfaraiders 2</h1>
+  <div class="sub">Patrulla Huarpes · Calculá tu pedido en vivo</div>
+
+  <div class="flavor">
+    <div><div class="name">Grosso</div><div class="desc">Cacao + DDL + chocolate negro</div></div>
+    <div class="stepper"><button class="btn minus" data-f="grosso">−</button><span class="qty" id="q-grosso">0</span><button class="btn plus" data-f="grosso">+</button></div>
+  </div>
+  <div class="flavor">
+    <div><div class="name">Megamix</div><div class="desc">Cacao + DDL + chocolate blanco</div></div>
+    <div class="stepper"><button class="btn minus" data-f="megamix">−</button><span class="qty" id="q-megamix">0</span><button class="btn plus" data-f="megamix">+</button></div>
+  </div>
+  <div class="flavor">
+    <div><div class="name">Ganzúa</div><div class="desc">Limón + líneas de chocolate semiamargo</div></div>
+    <div class="stepper"><button class="btn minus" data-f="ganzua">−</button><span class="qty" id="q-ganzua">0</span><button class="btn plus" data-f="ganzua">+</button></div>
+  </div>
+
+  <div class="total-box">
+    <div class="label">TU TOTAL</div>
+    <div class="total" id="total">$0</div>
+    <div class="breakdown" id="breakdown">—</div>
+  </div>
+  <div class="note">Cada 6 alfajores (combiná como quieras) = <b>$10.000</b> · Unidad suelta = <b>$1.800</b></div>
+  <button class="copy" id="copy">📋 Copiar mi pedido</button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const PRECIO_CAJA = 10000, PRECIO_UNIT = 1800, UNIDADES_CAJA = 6;
+const q = { grosso:0, megamix:0, ganzua:0 };
+const NOMBRES = { grosso:"Grosso", megamix:"Megamix", ganzua:"Ganzúa" };
+const $ = id => document.getElementById(id);
+
+function fmt(n){ return "$" + n.toLocaleString("es-AR"); }
+
+function calc(){
+  const total_u = q.grosso + q.megamix + q.ganzua;
+  const cajas = Math.floor(total_u / UNIDADES_CAJA);
+  const sueltas = total_u % UNIDADES_CAJA;
+  const precio = cajas * PRECIO_CAJA + sueltas * PRECIO_UNIT;
+  $("total").textContent = total_u === 0 ? "$0" : fmt(precio);
+  $("breakdown").textContent = total_u === 0 ? "Elegí tus alfajores" :
+    `${cajas} caja${cajas!==1?"s":""} de 6 × ${fmt(PRECIO_CAJA)}` +
+    (sueltas ? ` + ${sueltas} suelta${sueltas!==1?"s":""} × ${fmt(PRECIO_UNIT)}` : "") +
+    ` = ${total_u} alfajores`;
+}
+
+function set(f, v){
+  q[f] = Math.max(0, Math.min(24, v));
+  $("q-" + f).textContent = q[f];
+  document.querySelectorAll(`[data-f="${f}"].minus`).forEach(b => b.disabled = q[f] === 0);
+  calc();
+}
+
+document.querySelectorAll(".btn").forEach(b => b.addEventListener("click", () => {
+  set(b.dataset.f, q[b.dataset.f] + (b.classList.contains("plus") ? 1 : -1));
+}));
+
+$("copy").addEventListener("click", () => {
+  const total_u = q.grosso + q.megamix + q.ganzua;
+  if (total_u === 0){ toast("Elegí al menos 1 alfajor"); return; }
+  const cajas = Math.floor(total_u / 6), sueltas = total_u % 6;
+  const precio = cajas * PRECIO_CAJA + sueltas * PRECIO_UNIT;
+  const partes = ["Grosso","Megamix","Ganzúa"].map(n => `${n}: ${q[n.toLowerCase()]}`).filter(s => !s.endsWith(": 0"));
+  const texto = `Mi pedido Alfaraiders 2 🍫\n${partes.join(" · ")}\nTotal: ${total_u} alfajores = ${fmt(precio)}\n(Retiro el sábado en Sanpa)`;
+  if (navigator.clipboard) navigator.clipboard.writeText(texto).then(() => toast("Pedido copiado ✅"));
+  else toast(texto);
+});
+
+let tT;
+function toast(msg){ const t = $("toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(tT); tT = setTimeout(() => t.classList.remove("show"), 2200); }
+</script>
+</body>
+</html>
