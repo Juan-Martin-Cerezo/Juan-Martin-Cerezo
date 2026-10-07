@@ -1,11 +1,55 @@
-# 💫 About Me:
-🚀 AI Developer & Data Science Enthusiast<br>🔭 I’m currently working on EncryptIA<br>
+# Juan Martín Cerezo
 
+**Co-fundador y CTO de Bredaz — Buenos Aires, Argentina**
+**Co-founder & CTO at Bredaz — Buenos Aires, Argentina**
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/juanma.py) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:juanmartincerezo@gmail.com) 
+---
 
-# 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+## Español
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+Soy Juan Martín Cerezo, co-fundador y CTO de **Bredaz**, un estudio de software de Buenos Aires. Actualmente curso la secundaria técnica en la **ET21** y, en paralelo, construyo productos reales con foco en software e inteligencia artificial.
+
+### Qué construyo
+
+- **EncryptIA** — app de encriptación clásica potenciada con IA. Disponible gratis en Google Play, App Store y web.
+- Desarrollo de producto y frontend/backend en **Bredaz**.
+
+### Stack
+
+Python · JavaScript · Next.js · IA / LLM
+
+### Bredaz
+
+- Web: https://bredaz.com
+- Nosotros: https://bredaz.com/nosotros.html
+
+---
+
+## English
+
+I'm Juan Martín Cerezo, co-founder and CTO of **Bredaz**, a software studio based in Buenos Aires. I'm currently a student at a technical high school (**ET21**) and, in parallel, I build real products focused on software and artificial intelligence.
+
+### What I build
+
+- **EncryptIA** — a classical cryptography app powered by AI. Available for free on Google Play, the App Store, and the web.
+- Product, frontend and backend development at **Bredaz**.
+
+### Stack
+
+Python · JavaScript · Next.js · AI / LLM
+
+### Bredaz
+
+- Website: https://bredaz.com
+- About: https://bredaz.com/nosotros.html
+
+---
+
+## Links
+
+- 🌐 Bredaz: https://bredaz.com
+- 👥 Nosotros / About: https://bredaz.com/nosotros.html
+- 📱 EncryptIA en Google Play: https://play.google.com/store/apps/details?id=com.bredaz.encryptia
+- 🏢 GitHub Org: https://github.com/Bredaz
+- 🐦 X: https://x.com/somosbredaz
+- 📸 Instagram: https://www.instagram.com/somosbredaz
