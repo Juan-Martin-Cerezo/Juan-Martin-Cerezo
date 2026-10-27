@@ -2,6 +2,14 @@
 🚀 AI Developer & Data Science Enthusiast<br>🔭 I’m currently working on EncryptIA<br>
 
 
+## 🧭 Proyectos
+
+| Proyecto | Qué es | Stack |
+| :--- | :--- | :--- |
+| **[Qué Hay BA](https://github.com/Juan-Martin-Cerezo/que-hay-ba)** · [demo](https://que-hay-ba.vercel.app) | Agenda cultural de CABA sobre un mapa: ingesta tres fuentes públicas, normaliza precios y geocodifica cada evento. | Next.js · Postgres · MapLibre |
+| **[EventHub](https://github.com/Juan-Martin-Cerezo/eventhub)** · [demo](https://eventhub-lake-phi.vercel.app) | Venta de entradas multi-evento con aislamiento por tenant, QR offline-first y panel de gestión. | Next.js · Clerk · Supabase |
+| **[subte-monitor](https://github.com/Juan-Martin-Cerezo/subte-monitor)** · [demo](https://subte-monitor.vercel.app) | Estado de las líneas de subte de Buenos Aires en tiempo real. | Next.js |
+
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/juanma.py) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:juanmartincerezo@bredaz.com) 
 
