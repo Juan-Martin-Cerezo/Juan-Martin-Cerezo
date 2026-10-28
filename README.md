@@ -2,7 +2,7 @@
 🚀 AI Developer & Data Science Enthusiast<br>🔭 I’m currently working on EncryptIA<br>🐧 I work with Linux systems: servers, systemd services and power tooling in Rust<br>
 
 
-## 🧭 Proyectos
+## 🧭 Projects
 
 | Project | What it is | Stack |
 | :--- | :--- | :--- |
