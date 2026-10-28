@@ -1,18 +1,42 @@
-# 💫 About Me:
-🚀 AI Developer & Data Science Enthusiast<br>🔭 I’m currently working on EncryptIA<br>
+<h1 align="center">Juan Martín Cerezo</h1>
 
+<p align="center">
+  Computer science student in Buenos Aires. I build web apps end to end:<br>
+  Next.js and PostgreSQL on the server, maps and data on the client.
+</p>
 
-## 🧭 Proyectos
+<p align="center">
+  <a href="https://que-hay-ba.vercel.app">Qué Hay BA</a> ·
+  <a href="https://subte-monitor.vercel.app">Subte Monitor</a> ·
+  <a href="https://eventhub-lake-phi.vercel.app">EventHub</a> ·
+  <a href="https://bredaz.com">Bredaz</a> ·
+  <a href="mailto:juanmartincerezo@bredaz.com">Email</a>
+</p>
 
-| Proyecto | Qué es | Stack |
-| :--- | :--- | :--- |
-| **[Qué Hay BA](https://github.com/Juan-Martin-Cerezo/que-hay-ba)** · [demo](https://que-hay-ba.vercel.app) | Agenda cultural de CABA sobre un mapa: ingesta tres fuentes públicas, normaliza precios y geocodifica cada evento. | Next.js · Postgres · MapLibre |
-| **[EventHub](https://github.com/Juan-Martin-Cerezo/eventhub)** · [demo](https://eventhub-lake-phi.vercel.app) | Venta de entradas multi-evento con aislamiento por tenant, QR offline-first y panel de gestión. | Next.js · Clerk · Supabase |
-| **[subte-monitor](https://github.com/Juan-Martin-Cerezo/subte-monitor)** · [demo](https://subte-monitor.vercel.app) | Estado de las líneas de subte de Buenos Aires en tiempo real. | Next.js |
+## Projects
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/juanma.py) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:juanmartincerezo@bredaz.com) 
+| Project | What it does | Stack |
+| --- | --- | --- |
+| **[Qué Hay BA](https://github.com/Juan-Martin-Cerezo/que-hay-ba)** · [demo](https://que-hay-ba.vercel.app) | Cultural agenda for Buenos Aires on a map. Ingests three public sources, normalises prices and schedules, geocodes every venue and serves a GeoJSON API. | Next.js · PostgreSQL · MapLibre |
+| **[Subte Monitor](https://github.com/Juan-Martin-Cerezo/subte-monitor)** · [demo](https://subte-monitor.vercel.app) | Live map of the Buenos Aires subway. Reconstructs train positions from GTFS-Realtime, with arrivals, service alerts, accessibility data and a step-free route planner. | Next.js · Prisma · Leaflet |
+| **[EventHub](https://github.com/Juan-Martin-Cerezo/eventhub)** · [demo](https://eventhub-lake-phi.vercel.app) | Multi-event ticketing with per-tenant isolation, offline-first QR check-in and an admin panel. | Next.js · Clerk · Supabase |
+| **[WattWarden](https://github.com/Juan-Martin-Cerezo/wattwarden)** | Power management TUI and background daemon for Linux and macOS, written in Rust. | Rust · Linux sysfs · RAPL |
 
-# 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+## Stack
 
+| Area | Tools |
+| --- | --- |
+| Languages | TypeScript, JavaScript, Python, Kotlin, C++, Rust, SQL |
+| Web | Next.js, React, Tailwind CSS, Node.js |
+| Data | PostgreSQL, Prisma, SQLite |
+| Maps and geo | MapLibre GL, Leaflet, GTFS and GTFS-Realtime |
+| Machine learning | TensorFlow, Keras, scikit-learn, pandas |
+| Tooling | Git, Docker, Linux, Vercel, Arduino |
+
+## Currently
+
+Studying Computer Science at ET21 and building [EncryptIA](https://github.com/Juan-Martin-Cerezo), an encryption app for Android.
+
+## Contact
+
+[Instagram](https://instagram.com/juanma.py) · [Email](mailto:juanmartincerezo@bredaz.com) · [bredaz.com](https://bredaz.com)
